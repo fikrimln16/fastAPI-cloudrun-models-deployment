@@ -15,10 +15,10 @@ Deploy FastAPI Machine Learning model dengan menggunakan CloudRun
 $ virtualenv -p python3.8.2 .venv
 $ source .venv/bin/activate
 $ pip install -r requirements.txt
-$ gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+$ uvicorn main:app --reload
 ```
 
-## Cara deploy ke app-engine
+## Cara deploy ke cloud-run
 ```
 $ gcloud app create
 $ gcloud builds submit --tag gcr.io/astute-acolyte-381310/fastapi-model-deployment
