@@ -18,9 +18,10 @@ $ pip install -r requirements.txt
 $ uvicorn main:app --reload
 ```
 
-## Cara deploy ke cloud-run
+## Cara deploy ke cloud-run menggunakan cloud SDK
 ```
-$ gcloud app create
+$ gcloud init
+$ gcloud services enable run.googleapis.com
 $ gcloud builds submit --tag gcr.io/[project-id-kalian]/fastapi-model-deployment
-$ gcloud app browser
+$ gcloud run deploy --image gcr.io/[project-id-kalian]/fastapi-model-deployment --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml
 ```
