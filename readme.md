@@ -21,6 +21,6 @@ $ uvicorn main:app --reload
 ## Cara deploy ke cloud-run
 ```
 $ gcloud app create
-$ gcloud builds submit --tag gcr.io/astute-acolyte-381310/fastapi-model-deployment
+$ gcloud builds submit --tag gcr.io/[project-id-kalian]/fastapi-model-deployment
 $ gcloud app browser
 ```
