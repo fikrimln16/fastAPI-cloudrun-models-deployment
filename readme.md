@@ -1,4 +1,4 @@
-# Deploy FastAPI dengan menggunakan App Engine
+# Deploy FastAPI dengan menggunakan Cloud Run
 Deploy FastAPI Machine Learning model dengan menggunakan CloudRun
 
 
