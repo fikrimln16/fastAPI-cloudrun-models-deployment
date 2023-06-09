@@ -31,7 +31,7 @@ $ gcloud run deploy --image gcr.io/[project-id-kalian]/fastapi-model-deployment 
 1. Pastikan Anda memiliki akun Google Cloud Platform (GCP) yang aktif. Jika belum, daftar dan buat proyek baru di https://console.cloud.google.com.
 
 2. Pastikan Anda telah menginstal Google Cloud SDK (https://cloud.google.com/sdk) dan menginisialisasi dengan menjalankan perintah berikut di terminal atau command prompt:
-   $ gcloud init
+   ``` gcloud init ```
  
 3. Buatlah repository di layanan pengelolaan kode seperti GitHub atau GitLab, dan pastikan repository tersebut berisi semua file yang diperlukan untuk aplikasi FastAPI, termasuk Dockerfile, requirements.txt, dan kode aplikasi FastAPI Anda.
 
