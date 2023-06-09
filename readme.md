@@ -38,7 +38,7 @@ $ gcloud run deploy --image gcr.io/[project-id-kalian]/fastapi-model-deployment 
 4. Buka terminal atau command prompt, lalu arahkan ke direktori tempat Anda ingin mengklon repository FastAPI.
 
 5. Klone repository FastAPI dengan menjalankan perintah berikut:
-   $ git clone https://github.com/fikrimln16/fastAPI-cloudrun-models-deployment
+   ` git clone https://github.com/fikrimln16/fastAPI-cloudrun-models-deployment `
  
  6. Setelah proses pengklonan selesai, arahkan terminal atau command prompt ke direktori FastAPI yang baru saja dikloning.
  
