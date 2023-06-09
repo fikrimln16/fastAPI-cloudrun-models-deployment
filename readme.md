@@ -43,21 +43,21 @@ $ gcloud run deploy --image gcr.io/[project-id-kalian]/fastapi-model-deployment 
  6. Setelah proses pengklonan selesai, arahkan terminal atau command prompt ke direktori FastAPI yang baru saja dikloning.
  
  7. Build container Docker lokal dengan menjalankan perintah berikut:
-   $ docker build -t gcr.io/[PROJECT_ID]/fastapi-app . 
+   ` docker build -t gcr.io/[PROJECT_ID]/fastapi-app . `
     Ganti [PROJECT_ID] dengan ID proyek Google Cloud Platform yang telah Anda tentukan sebelumnya.
     
  8. Setelah proses pembangunan selesai, verifikasi bahwa kontainer Docker lokal berjalan dengan menjalankan perintah berikut:
-    $ docker run -p 8080:8080 gcr.io/[PROJECT_ID]/fastapi-app
+    ` docker run -p 8080:8080 gcr.io/[PROJECT_ID]/fastapi-app `
     Pastikan tidak ada kesalahan dan aplikasi FastAPI berjalan dengan baik di localhost.
 
 9. Jika langkah sebelumnya berhasil, berhenti dan hapus kontainer Docker yang berjalan dengan menekan Ctrl+C di terminal atau command prompt.
 
 10. Untuk menerbitkan kontainer Docker ke Google Cloud Container Registry, jalankan perintah berikut:
-    $ docker push gcr.io/[PROJECT_ID]/fastapi-app
+    ` docker push gcr.io/[PROJECT_ID]/fastapi-app `
     Kontainer akan diunggah ke Container Registry di proyek Google Cloud Platform yang sesuai.
     
 11. Selanjutnya, buat layanan Cloud Run dengan menjalankan perintah berikut pada asia-southeast2(jakarta): 
-    $ gcloud run deploy --image gcr.io/[PROJECT_ID]/fastapi-model-deployment --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml
+    ` gcloud run deploy --image gcr.io/[PROJECT_ID]/fastapi-model-deployment --platform managed --region asia-southeast2 --allow-unauthenticated fastapi-model-ml `
  
 12. GCP akan meminta Anda untuk memilih wilayah (region) untuk mendeploy layanan Cloud Run. Pilih wilayah yang sesuai dengan kebutuhan Anda.
 
