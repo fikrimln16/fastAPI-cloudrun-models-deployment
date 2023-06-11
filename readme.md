@@ -12,8 +12,12 @@ Deploy FastAPI Machine Learning model dengan menggunakan CloudRun
 
 ## Jalankan secara lokal
 ```
-$ virtualenv -p python3.8.2 .venv
-$ source .venv/bin/activate
+$ python -m venv [nama-folder]
+$ cd [nama-folder]
+$ cd Scripts
+$ activate
+$ cd ..
+$ git clone https://github.com/fikrimln16/fastAPI-cloudrun-models-deployment
 $ pip install -r requirements.txt
 $ uvicorn main:app --reload
 ```
